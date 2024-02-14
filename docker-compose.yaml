@@ -61,6 +61,16 @@ services:
     networks:
       - todos-network
 
+  composer:
+    build:
+      context: ./dockerfiles/composer
+      dockerfile: dockerfile
+    container_name: composer-container
+    volumes:
+      - ./src:/var/composer/src
+    networks:
+      - todos-network
+
 networks:
   todos-network:
     name: todos-network

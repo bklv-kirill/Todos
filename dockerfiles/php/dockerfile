@@ -4,9 +4,6 @@ WORKDIR /var/www/todos
 
 RUN apt-get update && \
     apt-get upgrade && \
-    apt-get install sudo && \
-    apt-get install --yes zip unzip
-
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+    apt-get install sudo
 
 RUN docker-php-ext-install pdo pdo_mysql
