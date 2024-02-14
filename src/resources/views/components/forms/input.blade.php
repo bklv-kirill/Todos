@@ -1,0 +1,1 @@
+<input type="{{ $attributes["type"] }}" name="{{ $attributes["name"] }}" value="{{ $attributes["value"] }}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
